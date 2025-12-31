@@ -14,7 +14,7 @@ model , bat_encoder, bowl_encoder, venue_encoder = train_model()
 
 st.set_page_config(page_title="IPL Score Predictor", layout="centered")
 
-st.title("🏏 IPL First Innings Score Predictor")
+st.title("🏏 IPL Score Predictor")
 st.write("Predict final score and score range based on match situation")
 
 # Score range function
@@ -67,5 +67,6 @@ if st.button("Predict Score"):
 
     st.success(f"🏏 Predicted Final Score: **{int(predicted_score)} runs**")
     st.info(f"📊 Score Range: **{predicted_range}**")
+
 
     st.info(f"Based on current score of {runs} runs in {overs} overs with {wickets} wickets down.")
